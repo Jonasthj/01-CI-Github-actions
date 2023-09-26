@@ -19,7 +19,7 @@ import static java.util.Optional.ofNullable;
 @RestController
 public class BankAccountController implements ApplicationListener<ApplicationReadyEvent> {
 
-    @Autowired
+    @Autowaired
     private BankingCoreSystmeService bankService;
 
     @PostMapping(path = "/account/{fromAccount}/transfer/{toAccount}", consumes = "application/json", produces = "application/json")
